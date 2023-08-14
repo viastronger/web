@@ -166,7 +166,7 @@ const mapHeight = ref("237px");
 
 onMounted(() => {
   setTimeout(resizeSetHeight, 300);
-  window.addEventListener("resize", resizeSetHeight, 300);
+  window.addEventListener("resize", resizeSetHeight);
 });
 
 onUnmounted(() => {
