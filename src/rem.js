@@ -1,5 +1,7 @@
 function resize(params) {
-  document.documentElement.style.fontSize = document.documentElement.clientWidth / 100 + 'px';
+  let { clientWidth } = document.documentElement
+  if (clientWidth < 1440) clientWidth = 1440
+  document.documentElement.style.fontSize = clientWidth / 100 + 'px';
 }
 resize()
 
