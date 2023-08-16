@@ -1,7 +1,7 @@
 <template>
   <div class="img-placeholder">
     <img src="@/assets/images/about/02.jpg" alt="" />
-    <img src="@/assets/images/about/03.jpg" alt="" />
+    <img src="@/assets/images/about/03.png" alt="" />
     <div class="carousel-wrap">
       <img v-scrollBot src="@/assets/images/about/04.png" alt="" />
       <div class="carousel-box">

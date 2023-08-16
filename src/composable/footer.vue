@@ -1,10 +1,14 @@
 <template>
   <div class="footer">
+    <img src="@/assets/images/footer/footer_bg.png" alt="" />
+    <div class="phone-box">
+      <img src="@/assets/images/footer/phone.png" alt="" />
+      {{ contactNumber }}
+    </div>
     <div class="ewm-box">
       <img src="@/assets/images/footer/weixin_ewm.jpg" alt="" />
-      <img src="@/assets/images/footer/service_ewm.png" alt="" />
+      <img src="@/assets/images/footer/service_ewm.jpg" alt="" />
     </div>
-    <img src="@/assets/images/footer/footer_bg.png" alt="" />
     <TheMap class="map"></TheMap>
   </div>
   <div class="bot-link">
@@ -30,8 +34,8 @@
         <li>
           <div class="title">相关网站</div>
           <div class="link">香格里培训</div>
-          <div class="link">珅昕陪护</div>
-          <div class="link">颐挚科技</div>
+          <!-- <div class="link">珅昕陪护</div> -->
+          <!-- <div class="link">颐挚科技</div> -->
         </li>
         <li>
           <div class="title">小程序</div>
@@ -50,7 +54,7 @@
             </el-popover>
           </div>
           <div class="icon-row">
-            <el-popover placement="top-start" width="200" trigger="hover">
+            <el-popover placement="top-start" width="200" trigger="hover" disabled>
               <div class="popover-box">
                 <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
                 关注挚护帮小程序
@@ -68,7 +72,7 @@
           <div class="title" style="padding-left: 60px; text-align: left">关注我们</div>
           <div class="icon-box">
             <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover">
+              <el-popover placement="top-start" width="200" trigger="hover" disabled>
                 <div class="popover-box">
                   <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
                   关注官方微信
@@ -79,7 +83,7 @@
               </el-popover>
             </div>
             <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover">
+              <el-popover placement="top-start" width="200" trigger="hover" disabled>
                 <div class="popover-box">
                   <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
                   关注官方大众点评
@@ -90,7 +94,7 @@
               </el-popover>
             </div>
             <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover">
+              <el-popover placement="top-start" width="200" trigger="hover" disabled>
                 <div class="popover-box">
                   <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
                   关注官方小红书
@@ -101,7 +105,7 @@
               </el-popover>
             </div>
             <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover">
+              <el-popover placement="top-start" width="200" trigger="hover" disabled>
                 <div class="popover-box">
                   <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
                   关注官方微博
@@ -112,7 +116,7 @@
               </el-popover>
             </div>
             <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover">
+              <el-popover placement="top-start" width="200" trigger="hover" disabled>
                 <div class="popover-box">
                   <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
                   关注官方抖音
@@ -123,7 +127,7 @@
               </el-popover>
             </div>
             <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover">
+              <el-popover placement="top-start" width="200" trigger="hover" disabled>
                 <div class="popover-box">
                   <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
                   关注官方快手
@@ -138,13 +142,11 @@
       </ul>
     </div>
   </div>
-
-  <!-- <div class="bot-title">颐挚母婴 一直用心为您服务</div> -->
-  <!-- <img src="@/assets/images/home/10.png" alt="" /> -->
 </template>
 
 <script setup>
 import { ref, onMounted, computed, onUnmounted } from "vue";
+import { contactNumber } from "@/config/constants";
 import TheMap from "@/components/TheMap.vue";
 import { debounce } from "lodash-es";
 
@@ -191,6 +193,22 @@ const resizeSetHeight = debounce(() => {
 <style lang="scss" scoped>
 .footer {
   position: relative;
+  .phone-box {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
   .ewm-box {
     position: absolute;
     top: v-bind(ewmBoxTop);

@@ -46,16 +46,16 @@ export default [
     route: 'birth',
     icon: '',
   },
-  {
-    name: '场景体验馆',
-    route: 'experience',
-    icon: '',
-  },
-  {
-    name: '智能应用',
-    route: 'apply',
-    icon: '',
-  },
+  // {
+  //   name: '场景体验馆',
+  //   route: 'experience',
+  //   icon: '',
+  // },
+  // {
+  //   name: '智能应用',
+  //   route: 'apply',
+  //   icon: '',
+  // },
   {
     name: '我们',
     route: 'about',

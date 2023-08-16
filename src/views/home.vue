@@ -2,7 +2,7 @@
   <div class="img-placeholder">
     <TheBanner :bannerList="bannerList"></TheBanner>
     <img v-scrollBot src="@/assets/images/home/03.png" alt="" />
-    <img src="@/assets/images/about/03.jpg" alt="" />
+    <img src="@/assets/images/about/03.png" alt="" />
     <img v-scrollBot src="@/assets/images/home/09.png" alt="" />
     <img src="@/assets/images/home/05.jpg" alt="" />
   </div>

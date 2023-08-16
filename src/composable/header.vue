@@ -37,7 +37,7 @@
 
 <script setup>
 import { ref, inject } from "vue";
-import { contactNumber } from "../config/constants";
+import { contactNumber } from "@/config/constants";
 import { useRouter, useRoute } from "vue-router";
 import { ElMessage } from "element-plus";
 import { ArrowDown } from "@element-plus/icons-vue";
