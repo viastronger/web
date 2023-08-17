@@ -33,7 +33,9 @@
       <ul>
         <li>
           <div class="title">相关网站</div>
-          <div class="link">香格里培训</div>
+          <div class="link">
+            <a href="https://xgl-train.yilife.cn/home" target="_blank">香格里培训 </a>
+          </div>
           <!-- <div class="link">珅昕陪护</div> -->
           <!-- <div class="link">颐挚科技</div> -->
         </li>
@@ -300,6 +302,9 @@ const resizeSetHeight = debounce(() => {
 
         .link {
           color: #d3d4d5;
+          a {
+            color: #d3d4d5;
+          }
           & + .link {
             margin-top: 8px;
           }
