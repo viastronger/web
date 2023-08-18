@@ -1,8 +1,8 @@
 <template>
-  <div class="img-placeholder">
+  <section class="img-placeholder">
     <img src="@/assets/images/experience/01.png" alt="" />
     <TheBanner :bannerList="bannerList" :rows="rows"></TheBanner>
-  </div>
+  </section>
 </template>
 
 <script setup>

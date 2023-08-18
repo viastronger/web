@@ -1,7 +1,7 @@
 <template>
-  <div class="detail">
+  <section class="detail">
     <div class="main-container">
-      <div class="avatar-box">
+      <section class="avatar-box">
         <div class="img-box">
           <img class="level-img" :src="getLevelIcon(carerInfo)" alt="" />
           <TheImage class="avatar" :src="carerInfo.picUrl"></TheImage>
@@ -29,10 +29,10 @@
             <el-button color="#47c4f4" v-scrollBot> 立即预约 </el-button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="main-info">
-        <div class="info">
+      <section class="main-info">
+        <article class="info">
           <TheCardTitle :styleObj="{ left: '36px' }" title="她的个人信息"></TheCardTitle>
           <div class="scroll-box">
             <div class="desc">
@@ -80,9 +80,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="experience">
+        <aside class="experience">
           <TheCardTitle :styleObj="{ left: '36px' }" title="她的培训经历"></TheCardTitle>
 
           <div class="scroll-box">
@@ -98,10 +98,10 @@
               <div class="right">{{ item.trainCourse }}</div>
             </div>
           </div>
-        </div>
-      </div>
+        </aside>
+      </section>
 
-      <div class="pic">
+      <section class="pic">
         <TheCardTitle :styleObj="{ left: '36px' }" title="她的工作&生活照"></TheCardTitle>
         <div class="img-box">
           <div
@@ -116,19 +116,20 @@
             ></TheImage>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="recommend" v-if="list.length">
+      <section class="recommend" v-if="list.length">
         <div class="title">看过她的人还看了</div>
 
         <div class="list">
           <ThePersonCard :list="list"></ThePersonCard>
         </div>
-      </div>
+      </section>
     </div>
+
     <img src="@/assets/images/detail/03.jpg" alt="" />
     <img src="@/assets/images/detail/04.jpg" alt="" />
-  </div>
+  </section>
 </template>
 
 <script setup>

@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <header class="main-container">
     <div class="logo" @click="router.push('home')">
       <img src="@/assets/images/logo/logo_dark.png" alt="" />
     </div>
@@ -32,7 +32,7 @@
         {{ contactNumber }}
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script setup>

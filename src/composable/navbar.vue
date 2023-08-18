@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <nav class="main-container">
     <el-menu
       ref="menu"
       :default-active="activeIndex"
@@ -97,7 +97,7 @@
         </el-sub-menu>
       </div>
     </el-menu>
-  </div>
+  </nav>
 </template>
 
 <script setup>

@@ -1,5 +1,5 @@
 <template>
-  <div class="search-main">
+  <section class="search-main">
     <div class="main-container">
       <Filter @filterChange="filterChange" :level="level"></Filter>
 
@@ -27,7 +27,7 @@
         <div class="next-page" v-if="query.pageIndex < totalPage" @click="nextPage"></div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

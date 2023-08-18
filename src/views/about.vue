@@ -1,5 +1,5 @@
 <template>
-  <div class="img-placeholder">
+  <section class="img-placeholder">
     <img src="@/assets/images/about/02.png" alt="" />
     <img src="@/assets/images/about/03.png" alt="" />
     <div class="carousel-wrap">
@@ -22,7 +22,7 @@
     </div>
     <img v-scrollBot src="@/assets/images/about/05.jpg" alt="" />
     <img v-scrollBot src="@/assets/images/about/06.png" alt="" />
-  </div>
+  </section>
 </template>
 <script setup>
 import { ref, reactive, toRefs, watch, onMounted, onUnmounted } from "vue";

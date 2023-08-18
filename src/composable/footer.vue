@@ -1,149 +1,152 @@
 <template>
-  <div class="footer">
-    <img src="@/assets/images/footer/footer_bg.png" alt="" />
-    <div class="phone-box">
-      <img src="@/assets/images/footer/phone.png" alt="" />
-      {{ contactNumber }}
-    </div>
-    <div class="ewm-box">
-      <img src="@/assets/images/footer/weixin_ewm.jpg" alt="" />
-      <img src="@/assets/images/footer/service_ewm.jpg" alt="" />
-    </div>
-    <TheMap class="map"></TheMap>
-  </div>
-  <div class="bot-link">
-    <div class="left">
-      <img src="@/assets/images/logo/logo_light.png" alt="" />
-      <div class="copyright">Copyright © 2022-2029 All Rights Reserved.</div>
-      <div class="record">
-        <img
-          class="security"
-          src="@/assets/images/footer/publicSecurityLogo.png"
-          alt=""
-        />
-        <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2022023635号 </a>
-        <span> | </span>
-        <a href="http://cyberpolice.mps.gov.cn/" target="_blank">
-          浙公网安备 33011002016623号
-        </a>
+  <footer>
+    <section class="footer">
+      <img src="@/assets/images/footer/footer_bg.png" alt="" />
+      <div class="phone-box">
+        <img src="@/assets/images/footer/phone.png" alt="" />
+        {{ contactNumber }}
       </div>
-    </div>
+      <div class="ewm-box">
+        <img src="@/assets/images/footer/weixin_ewm.jpg" alt="" />
+        <img src="@/assets/images/footer/service_ewm.jpg" alt="" />
+      </div>
+      <TheMap class="map"></TheMap>
+    </section>
 
-    <div class="right">
-      <ul>
-        <li>
-          <div class="title">相关网站</div>
-          <div class="link">
-            <a href="https://xgl-train.yilife.cn/home" target="_blank">香格里培训 </a>
-          </div>
-          <!-- <div class="link">珅昕陪护</div> -->
-          <!-- <div class="link">颐挚科技</div> -->
-        </li>
-        <li>
-          <div class="title">小程序</div>
-          <div class="icon-row">
-            <el-popover placement="top-start" width="200" trigger="hover">
-              <div class="popover-box">
-                <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
-                关注挚护易小程序
+    <section class="bot-link">
+      <div class="left">
+        <img src="@/assets/images/logo/logo_light.png" alt="" />
+        <div class="copyright">Copyright © 2022-2029 All Rights Reserved.</div>
+        <div class="record">
+          <img
+            class="security"
+            src="@/assets/images/footer/publicSecurityLogo.png"
+            alt=""
+          />
+          <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2022023635号 </a>
+          <span> | </span>
+          <a href="http://cyberpolice.mps.gov.cn/" target="_blank">
+            浙公网安备 33011002016623号
+          </a>
+        </div>
+      </div>
+
+      <div class="right">
+        <ul>
+          <li>
+            <div class="title">相关网站</div>
+            <div class="link">
+              <a href="https://xgl-train.yilife.cn/home" target="_blank">香格里培训 </a>
+            </div>
+            <!-- <div class="link">珅昕陪护</div> -->
+            <!-- <div class="link">颐挚科技</div> -->
+          </li>
+          <li>
+            <div class="title">小程序</div>
+            <div class="icon-row">
+              <el-popover placement="top-start" width="200" trigger="hover">
+                <div class="popover-box">
+                  <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
+                  关注挚护易小程序
+                </div>
+                <template #reference>
+                  <div class="icon-row">
+                    <img class="icon" src="@/assets/images/footer/01.png" alt="" />
+                    挚护易
+                  </div>
+                </template>
+              </el-popover>
+            </div>
+            <div class="icon-row">
+              <el-popover placement="top-start" width="200" trigger="hover" disabled>
+                <div class="popover-box">
+                  <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
+                  关注挚护帮小程序
+                </div>
+                <template #reference>
+                  <div class="icon-row">
+                    <img class="icon" src="@/assets/images/footer/01.png" alt="" />
+                    挚护帮
+                  </div>
+                </template>
+              </el-popover>
+            </div>
+          </li>
+          <li>
+            <div class="title" style="padding-left: 60px; text-align: left">关注我们</div>
+            <div class="icon-box">
+              <div class="item">
+                <el-popover placement="top-start" width="200" trigger="hover" disabled>
+                  <div class="popover-box">
+                    <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
+                    关注官方微信
+                  </div>
+                  <template #reference>
+                    <img class="icon" src="@/assets/images/footer/02.png" alt="" />
+                  </template>
+                </el-popover>
               </div>
-              <template #reference>
-                <div class="icon-row">
-                  <img class="icon" src="@/assets/images/footer/01.png" alt="" />
-                  挚护易
-                </div>
-              </template>
-            </el-popover>
-          </div>
-          <div class="icon-row">
-            <el-popover placement="top-start" width="200" trigger="hover" disabled>
-              <div class="popover-box">
-                <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
-                关注挚护帮小程序
+              <div class="item">
+                <el-popover placement="top-start" width="200" trigger="hover" disabled>
+                  <div class="popover-box">
+                    <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
+                    关注官方大众点评
+                  </div>
+                  <template #reference>
+                    <img class="icon" src="@/assets/images/footer/03.png" alt="" />
+                  </template>
+                </el-popover>
               </div>
-              <template #reference>
-                <div class="icon-row">
-                  <img class="icon" src="@/assets/images/footer/01.png" alt="" />
-                  挚护帮
-                </div>
-              </template>
-            </el-popover>
-          </div>
-        </li>
-        <li>
-          <div class="title" style="padding-left: 60px; text-align: left">关注我们</div>
-          <div class="icon-box">
-            <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover" disabled>
-                <div class="popover-box">
-                  <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
-                  关注官方微信
-                </div>
-                <template #reference>
-                  <img class="icon" src="@/assets/images/footer/02.png" alt="" />
-                </template>
-              </el-popover>
+              <div class="item">
+                <el-popover placement="top-start" width="200" trigger="hover" disabled>
+                  <div class="popover-box">
+                    <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
+                    关注官方小红书
+                  </div>
+                  <template #reference>
+                    <img class="icon" src="@/assets/images/footer/07.png" alt="" />
+                  </template>
+                </el-popover>
+              </div>
+              <div class="item">
+                <el-popover placement="top-start" width="200" trigger="hover" disabled>
+                  <div class="popover-box">
+                    <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
+                    关注官方微博
+                  </div>
+                  <template #reference>
+                    <img class="icon" src="@/assets/images/footer/06.png" alt="" />
+                  </template>
+                </el-popover>
+              </div>
+              <div class="item">
+                <el-popover placement="top-start" width="200" trigger="hover" disabled>
+                  <div class="popover-box">
+                    <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
+                    关注官方抖音
+                  </div>
+                  <template #reference>
+                    <img class="icon" src="@/assets/images/footer/04.png" alt="" />
+                  </template>
+                </el-popover>
+              </div>
+              <div class="item">
+                <el-popover placement="top-start" width="200" trigger="hover" disabled>
+                  <div class="popover-box">
+                    <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
+                    关注官方快手
+                  </div>
+                  <template #reference>
+                    <img class="icon" src="@/assets/images/footer/08.png" alt="" />
+                  </template>
+                </el-popover>
+              </div>
             </div>
-            <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover" disabled>
-                <div class="popover-box">
-                  <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
-                  关注官方大众点评
-                </div>
-                <template #reference>
-                  <img class="icon" src="@/assets/images/footer/03.png" alt="" />
-                </template>
-              </el-popover>
-            </div>
-            <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover" disabled>
-                <div class="popover-box">
-                  <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
-                  关注官方小红书
-                </div>
-                <template #reference>
-                  <img class="icon" src="@/assets/images/footer/07.png" alt="" />
-                </template>
-              </el-popover>
-            </div>
-            <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover" disabled>
-                <div class="popover-box">
-                  <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
-                  关注官方微博
-                </div>
-                <template #reference>
-                  <img class="icon" src="@/assets/images/footer/06.png" alt="" />
-                </template>
-              </el-popover>
-            </div>
-            <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover" disabled>
-                <div class="popover-box">
-                  <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
-                  关注官方抖音
-                </div>
-                <template #reference>
-                  <img class="icon" src="@/assets/images/footer/04.png" alt="" />
-                </template>
-              </el-popover>
-            </div>
-            <div class="item">
-              <el-popover placement="top-start" width="200" trigger="hover" disabled>
-                <div class="popover-box">
-                  <img class="icon" src="@/assets/images/footer/ewm.png" alt="" />
-                  关注官方快手
-                </div>
-                <template #reference>
-                  <img class="icon" src="@/assets/images/footer/08.png" alt="" />
-                </template>
-              </el-popover>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 </template>
 
 <script setup>
@@ -155,7 +158,7 @@ import { debounce } from "lodash-es";
 const radio = 1920 / 1115;
 const ewmBoxWidthRadio = 1065 / 1920;
 const ewmBoxHeightRadio = 324 / 1115;
-const ewmBoxTopRadio = 295 / 1115;
+const ewmBoxTopRadio = 285 / 1115;
 const mapBottomRadio = 60 / 1115;
 const mapWidthRadio = 1070 / 1920;
 const mapHeightRadio = 237 / 1115;
@@ -163,7 +166,7 @@ const mapHeightRadio = 237 / 1115;
 const footerHeight = ref("1115px");
 const ewmBoxWidth = ref("1065px");
 const ewmBoxHeight = ref("324px");
-const ewmBoxTop = ref("295px");
+const ewmBoxTop = ref("285px");
 const mapBottom = ref("60px");
 const mapWidth = ref("1070px");
 const mapHeight = ref("237px");
